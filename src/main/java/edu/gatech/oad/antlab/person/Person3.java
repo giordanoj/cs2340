@@ -44,9 +44,10 @@ public class Person3 {
 	private String calc(String input) {
 	  //Person 3 put your implementation here
 	  String a ="";
-	  for (int i = input.length()-1; i>=0; i--) {
-		a += input.charAt(i);
-	  }
-	  return a;
+ 	  for (int i = input.length()-1; i >= 0; i--) {
+ 		      a += input.charAt(i);
+ 	  }
+ 	  return a;
+	  
 	}
 }
