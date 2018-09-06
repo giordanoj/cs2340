@@ -5,14 +5,22 @@
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds/
  */
 
-plugins {
-     id 'java-library'
-     id 'java'
-     id 'findbugs'
+apply plugin: 'java'
+
+defaultTasks 'jar'
+
+/* When running this dependencies, go to directory library
+ include anything with resources
+*/
+
+dependencies {
+    compile files('lib/resources.jar')
 }
 
-task hello << {
-    println 'Hello world'
+
+jar {
+    manifest {
+            attributes('Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+            'Class-Path': '../../lib/resources.jar')
+    }
 }
-
-
