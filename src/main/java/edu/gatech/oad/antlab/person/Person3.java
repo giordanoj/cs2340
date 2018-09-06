@@ -5,7 +5,7 @@ package edu.gatech.oad.antlab.person;
  *  reversed string
  *
  *  @author  Jun Chen
- *  @version 1.1
+ *  @version 1.3
  */
 public class Person3 {
    /** Holds the persons real name */
@@ -48,6 +48,6 @@ public class Person3 {
  		      a += input.charAt(i);
  	  }
  	  return a;
-	  
+
 	}
 }
