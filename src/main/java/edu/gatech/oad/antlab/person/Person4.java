@@ -32,11 +32,11 @@ public class Person4 {
     private String calc(String input) {
       //Person 4 put your implementation here
       if (input.length() > 0) {
-            String greater = "";
+            String reverse = "";
             for (int i = 0; i < input.length(); i++) {
                 reverse = (char)((int)input.charAt(i) + 1) + reverse;
             }
-            return greater;
+            return reverse;
         } else {
             return "";
         }
